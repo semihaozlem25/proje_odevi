@@ -1,0 +1,2 @@
+rootProject.name='proje_odevi'
+include ':app'

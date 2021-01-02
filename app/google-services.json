@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "926427271530",
+    "firebase_url": "https://projeodevi-14123.firebaseio.com",
+    "project_id": "projeodevi-14123",
+    "storage_bucket": "projeodevi-14123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926427271530:android:632068d97103f58bca1513",
+        "android_client_info": {
+          "package_name": "com.example.proje_odevi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926427271530-em5mna37g2okcj02d7s8hjpao0h3u5fp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proje_odevi",
+            "certificate_hash": "221645d643909607fc8ef100a68bcf359b822004"
+          }
+        },
+        {
+          "client_id": "926427271530-stph2971vgqfhnr07t0aiss2v0vnubmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKiVMA2a7ZJjlqkKQxIBf4_J7WgaFAo70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926427271530-stph2971vgqfhnr07t0aiss2v0vnubmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
