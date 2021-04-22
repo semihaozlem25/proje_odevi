@@ -34,10 +34,10 @@ import java.io.InputStreamReader;
 public class randevu_al extends AppCompatActivity {
     TextView tv1, tv2, tv3, tv4;
     private String[] polikinlik = {"Dahiliye", "Ağız Ve Diş Sağlığı", "Noroloji", "Kardiyoloji"};
-    private String[] polikinlik1 = {"DR.Ahmet", "DR.Selim", "DR.Burak"};
-    private String[] polikinlik2 = {"DR.Yusuf", "DR.Ömer", "DR.yunus"};
-    private String[] polikinlik3 = {"DR.Emre", "DR.Emrah", "DR.Bekir"};
-    private String[] polikinlik4 = {"DR.Ekrem", "DR.Hamdi", "DR.Erdem"};
+    private String[] polikinlikd = {"DR.Ahmet", "DR.Selim", "DR.Burak"};
+    private String[] polikinlikd1 = {"DR.Yusuf", "DR.Ömer", "DR.yunus"};
+    private String[] polikinlikd2 = {"DR.Emre", "DR.Emrah", "DR.Bekir"};
+    private String[] polikinlikd3 = {"DR.Ekrem", "DR.Hamdi", "DR.Erdem"};
     private String[] saat = {"10.00", "10.30", "11.00", "11.30", "12.00", "12.30", "13.00", "13.30", "14.00", "14.30", "15.00", "15.30", "16.00", "16.30", "17.00"};
 
     private Spinner spinnerpolikinlik;
@@ -65,7 +65,7 @@ public class randevu_al extends AppCompatActivity {
 
 
         dataAdapterForpolikinlik = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, polikinlik);
-        dataAdapterFordoktor = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,polikinlik1);
+        dataAdapterFordoktor = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,polikinlikd);
         dataAdaptersaat = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,saat);
 
 
@@ -81,13 +81,13 @@ public class randevu_al extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getSelectedItem().toString().equals(polikinlik[0]))
-                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlik1);
+                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlikd);
                 else if(parent.getSelectedItem().toString().equals(polikinlik[1]))
-                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlik2);
+                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlikd1);
                 else if(parent.getSelectedItem().toString().equals(polikinlik[2]))
-                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlik3);
+                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlikd2);
                 else if(parent.getSelectedItem().toString().equals(polikinlik[3]))
-                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlik4);
+                    dataAdapterFordoktor = new ArrayAdapter<String>(randevu_al.this, android.R.layout.simple_spinner_item,polikinlikd3);
 
                 dataAdapterForpolikinlik.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinnerdoktor.setAdapter(dataAdapterFordoktor);
