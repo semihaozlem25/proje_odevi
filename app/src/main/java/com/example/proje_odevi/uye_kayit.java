@@ -25,8 +25,8 @@ import java.util.Map;
 
 public class uye_kayit extends AppCompatActivity {
     private String[] cinsiyet = {"KADIN","ERKEK"};
-    TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7, tv8;
-    EditText et1, et2, et3, et4, et6, et7;
+    TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7;
+    EditText et1, et2, et3, et4, et5, et6;
     Button kaydoluye;
     Spinner spinnercinsiyet;
 
@@ -35,24 +35,19 @@ public class uye_kayit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uye_kayit);
         tv1 = (TextView)findViewById(R.id.baslik);
-        tv3 = (TextView)findViewById(R.id.isim);
-        tv4 = (TextView)findViewById(R.id.sysisim);
-        tv5 = (TextView)findViewById(R.id.dtrh);
-        tv6 = (TextView)findViewById(R.id.cnsyt);
-        tv7 = (TextView)findViewById(R.id.sifre);
-        tv8 = (TextView)findViewById(R.id.sifret);
-        et2 = (EditText)findViewById(R.id.isimedt);
-        et3 = (EditText)findViewById(R.id.sysedt);
-        et4 = (EditText)findViewById(R.id.dgtedt);
-        spinnercinsiyet = (Spinner)findViewById(R.id.spinnercin);
-        et6 = (EditText)findViewById(R.id.sifreedt);
-        et7 = (EditText)findViewById(R.id.sifretedt);
+        tv2 = (TextView)findViewById(R.id.isim);
+        tv3 = (TextView)findViewById(R.id.sysisim);
+        tv4 = (TextView)findViewById(R.id.dtrh);
+        tv5 = (TextView)findViewById(R.id.cnsyt);
+        tv6 = (TextView)findViewById(R.id.sifre);
+        tv7 = (TextView)findViewById(R.id.sifret);
+        et1 = (EditText)findViewById(R.id.isimedt);
+        et2 = (EditText)findViewById(R.id.sysedt);
+        et3 = (EditText)findViewById(R.id.dgtedt);
+        et4 = (EditText)findViewById(R.id.cnsytedt);
+        et5 = (EditText)findViewById(R.id.sifreedt);
+        et6 = (EditText)findViewById(R.id.sifretedt);
         kaydoluye = findViewById(R.id.kaydoluye);
-
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,cinsiyet);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnercinsiyet.setAdapter(adapter);
 
 
 
@@ -62,12 +57,12 @@ public class uye_kayit extends AppCompatActivity {
             public void onClick(View v) {
                 DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
                 dbRef.push().setValue(new User(
+                        et1.getText().toString(),
                         et2.getText().toString(),
                         et3.getText().toString(),
                         et4.getText().toString(),
-                        spinnercinsiyet.getSelectedItem().toString(),
-                        et6.getText().toString(),
-                        et7.getText().toString())
+                        et5.getText().toString(),
+                        et6.getText().toString())
                 );
                 finish();
 

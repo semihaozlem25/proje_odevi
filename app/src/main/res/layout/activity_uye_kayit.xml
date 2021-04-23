@@ -26,7 +26,7 @@
         android:id="@+id/isim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:text="İsim:"
         android:textColor="#250101"
@@ -74,8 +74,8 @@
         android:id="@+id/cnsyt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
         android:text="Cinsiyet:"
         android:textColor="#2F0101"
         android:textColorHighlight="#280101"
@@ -91,7 +91,7 @@
         android:layout_width="74dp"
         android:layout_height="21dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:text="Şifre:"
         android:textColor="#220101"
         android:textColorHighlight="#260101"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:text="Şifre Tekrar:"
         android:textColor="#250000"
         android:textColorHighlight="#250000"
@@ -134,20 +134,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sifretedt" />
 
-    <Spinner
-        android:id="@+id/spinnercin"
-        android:layout_width="216dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/cnsyt"
-        app:layout_constraintTop_toBottomOf="@+id/dgtedt" />
-
     <EditText
         android:id="@+id/isimedt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_marginStart="143dp"
         android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -158,12 +149,12 @@
         android:id="@+id/sifreedt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/sifre"
-        app:layout_constraintTop_toBottomOf="@+id/spinnercin" />
+        app:layout_constraintTop_toBottomOf="@+id/cnsytedt" />
 
     <EditText
         android:id="@+id/sifretedt"
@@ -197,5 +188,16 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/dtrh"
         app:layout_constraintTop_toBottomOf="@+id/sysedt" />
+
+    <EditText
+        android:id="@+id/cnsytedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dgtedt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
