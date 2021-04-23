@@ -15,3 +15,7 @@ Daha sonra ise yukarıda oluşturulan sınıftan v1 nesnesi oluşturuldu.
 
 bu kodda ise v1 nesnesinin new ile bellekte yer kaplamasını sağladık.
 
+![g4](https://user-images.githubusercontent.com/74215861/115924486-73c91e80-a488-11eb-8ec5-e3e7f763f60f.PNG)
+
+ilk satırda ekleme metodu oluşturuldu ve 6 parametre alıyor. ikinci satırda ise v1 nesnesi üzerinden getWritableDatabase() metodunu çağrıldı. Çünkü ekleme yani bir yazma işlemi yapılacak. Bu işlemi de db nesnesine atıldı. Üçüncü satırda ise zorunlu olarak ContentValues sınıfından bir nesne oluşturuldu. Daha sonra ise  nesnenin put() metodunu çağırarak ekleme yapıldı. Hangi alanları ekledik? Parantez içinde ilk parametre nerede tutacalacağını gösterir. 2.parametre ise neyi tutulacak onu gösterir. Bu tutulacak olan değerleri, ekleme() metodunda parametre olarak almıştı. Son satırda ise db’nin insertOrThrow() metodunu çağrıldı. Bu metod veritabanına ekleme yapar.
+
