@@ -7,3 +7,5 @@
 
 İlk olarak veriTabani adında sınıf oluşturulup ardından ise içine *SQLiteOpenHelper* metodunu extends edildi. Bu metodun içine ise *onCreate(SQLiteDatabase db)* ve *onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)* değişkenlerini ekleyip içleri dolduruldu. İlk değişkenin içinde veritabanın ismi ikincisinde ise veri tabanının sürümü yazıldı. 
 
+
+
