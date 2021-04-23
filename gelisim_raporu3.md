@@ -11,4 +11,7 @@
 
 Daha sonra ise yukarıda oluşturulan sınıftan v1 nesnesi oluşturuldu.
 
+![g3](https://user-images.githubusercontent.com/74215861/115924093-edacd800-a487-11eb-995f-e9e17371c487.PNG)
+
+bu kodda ise v1 nesnesinin new ile bellekte yer kaplamasını sağladık.
 
