@@ -2,7 +2,6 @@ package com.example.proje_odevi;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Bundle;
 
 public class veriTabani extends SQLiteOpenHelper {
     public veriTabani( Context context) {
@@ -11,11 +10,15 @@ public class veriTabani extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL("CREATE TABLE hastaBilgi (isim Text, soyisim Text, " +
+                "dogumTarihi Text, cinsiyet Text, sifre Text, sifreTekrar Text);");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS hastaBilgi");
+        onCreate(db);
 
     }
 }
