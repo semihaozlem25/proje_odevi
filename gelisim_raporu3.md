@@ -1,7 +1,16 @@
 # Gelişim Raporu 3
 
 **DÜZELTMELER**:
-İlk dönemde projemde kullanılacak olan Firebase uygulamasıydı fakat uygulamayı Android Studio' ya bağlarken internet kopukluğundan dolayı herhangi bir veriyi ekleyip çıkarılmadı bu yüzden başka ver tabanı uygulaması kullanmak istenildi. SQLite uygulamasını kullanıldı ve ekleme işlemi yapıldı.
+Projenin ilk döneminde veriyi ekleme kısmında kalınmıştı ve kullanılan uygulama Firebase olduğu için çokca uğraşılıp çözüm bulunamadı ve başka yönteme geçerek SQL veri tabanını kullanarak eklemeler yapıldı.
+
+**KAYNAKLAR**:
+SQL veri tabanı için;
+
+1. https://www.youtube.com/watch?v=0puZXySbhx4&list=PLyezMuyIdMmecdSo3_AFOLiyIFe8Fjl3f&index=15
+2. https://www.robodeney.com/android-studio/android-studio-veritabani-kullanimi-sqlite
+
+**ZORLUKLAR**:
+İlk dönemde projede kullanılacak olan Firebase uygulamasıydı fakat uygulamayı Android Studio' ya bağlarken internet kopukluğundan dolayı herhangi bir veriyi ekleyip çıkarılmadı bu yüzden başka ver tabanı uygulaması kullanmak istenildi. SQLite uygulamasını kullanıldı ve ekleme işlemi yapıldı.
 
 ![g1](https://user-images.githubusercontent.com/74215861/115923594-2304f600-a487-11eb-97f4-5d93526d28ab.PNG)
 
@@ -19,8 +28,6 @@ bu kodda ise v1 nesnesinin new ile bellekte yer kaplamasını sağladık.
 
 ilk satırda ekleme metodu oluşturuldu ve 6 parametre alıyor. ikinci satırda ise v1 nesnesi üzerinden getWritableDatabase() metodunu çağrıldı. Çünkü ekleme yani bir yazma işlemi yapılacak. Bu işlemi de db nesnesine atıldı. Üçüncü satırda ise zorunlu olarak ContentValues sınıfından bir nesne oluşturuldu. Daha sonra ise  nesnenin put() metodunu çağırarak ekleme yapıldı. Hangi alanları ekledik? Parantez içinde ilk parametre nerede tutacalacağını gösterir. 2.parametre ise neyi tutulacak onu gösterir. Bu tutulacak olan değerleri, ekleme() metodunda parametre olarak almıştı. Son satırda ise db’nin insertOrThrow() metodunu çağrıldı. Bu metod veritabanına ekleme yapar.
 
-**KAYNAKLAR**:
-SQL veri tabanı için;
-1.https://www.youtube.com/watch?v=0puZXySbhx4&list=PLyezMuyIdMmecdSo3_AFOLiyIFe8Fjl3f&index=15
-2.https://www.robodeney.com/android-studio/android-studio-veritabani-kullanimi-sqlite/
+**ARAÇLAR**:
+Android Studio kullanıldı.
 
