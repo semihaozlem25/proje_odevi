@@ -2,38 +2,33 @@ package com.example.proje_odevi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class uye_kayit extends AppCompatActivity {
     private String[] cinsiyet = {"KADIN","ERKEK"};
     TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7;
     EditText et1, et2, et3, et4, et5, et6;
     Button kaydoluye;
-    Spinner spinnercinsiyet;
+    private veriTabani v1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uye_kayit);
+
+        v1 = new veriTabani(this);
+
         tv1 = (TextView)findViewById(R.id.baslik);
         tv2 = (TextView)findViewById(R.id.isim);
         tv3 = (TextView)findViewById(R.id.sysisim);
@@ -55,16 +50,16 @@ public class uye_kayit extends AppCompatActivity {
         kaydoluye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
-                dbRef.push().setValue(new User(
-                        et1.getText().toString(),
-                        et2.getText().toString(),
-                        et3.getText().toString(),
-                        et4.getText().toString(),
-                        et5.getText().toString(),
-                        et6.getText().toString())
-                );
-                finish();
+
+                try
+                {
+
+                }
+                finally
+                {
+
+                }
+
 
 
                 Intent intent = new Intent(getApplicationContext(), giris.class);
@@ -94,11 +89,33 @@ public class uye_kayit extends AppCompatActivity {
 
 
 
+
+
             }
         });
 
 
 
 
+
+
+
+
     }
+          private void kayitEkle(String isim, String soyisim, String dogumTarihi, String cinsiyet, String sifre, String sifreTekrar)
+          {
+              SQLiteDatabase db = v1.getWritableDatabase();
+              ContentValues veriler = new ContentValues();
+              veriler.put("isim", isim);
+              veriler.put("soyisim", soyisim);
+              veriler.put("dogumTarihi", dogumTarihi);
+              veriler.put("cinsiyet", cinsiyet);
+              veriler.put("sifre", sifre);
+              veriler.put("sifreTekrar", sifreTekrar);
+              db.insertOrThrow("hastaBilgi",null, veriler);
+
+
+
+          }
+
 }
