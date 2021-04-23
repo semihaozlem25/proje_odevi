@@ -19,3 +19,8 @@ bu kodda ise v1 nesnesinin new ile bellekte yer kaplamasını sağladık.
 
 ilk satırda ekleme metodu oluşturuldu ve 6 parametre alıyor. ikinci satırda ise v1 nesnesi üzerinden getWritableDatabase() metodunu çağrıldı. Çünkü ekleme yani bir yazma işlemi yapılacak. Bu işlemi de db nesnesine atıldı. Üçüncü satırda ise zorunlu olarak ContentValues sınıfından bir nesne oluşturuldu. Daha sonra ise  nesnenin put() metodunu çağırarak ekleme yapıldı. Hangi alanları ekledik? Parantez içinde ilk parametre nerede tutacalacağını gösterir. 2.parametre ise neyi tutulacak onu gösterir. Bu tutulacak olan değerleri, ekleme() metodunda parametre olarak almıştı. Son satırda ise db’nin insertOrThrow() metodunu çağrıldı. Bu metod veritabanına ekleme yapar.
 
+**KAYNAKLAR**:
+SQL veri tabanı için;
+1.https://www.youtube.com/watch?v=0puZXySbhx4&list=PLyezMuyIdMmecdSo3_AFOLiyIFe8Fjl3f&index=15
+2.https://www.robodeney.com/android-studio/android-studio-veritabani-kullanimi-sqlite/
+
