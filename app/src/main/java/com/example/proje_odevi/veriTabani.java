@@ -5,12 +5,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class veriTabani extends SQLiteOpenHelper {
     public veriTabani( Context context) {
+
         super(context, "veriTabaniAdi", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE hastaBilgi (isim Text, soyisim Text, " +
+        db.execSQL("create table hastaBilgi (id INTEGER PRIMARY KEY AUTOINCREMENT, isim Text, soyisim Text, " +
                 "dogumTarihi Text, cinsiyet Text, sifre Text, sifreTekrar Text);");
 
     }
