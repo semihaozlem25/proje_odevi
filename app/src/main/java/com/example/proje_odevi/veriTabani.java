@@ -11,8 +11,7 @@ public class veriTabani extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table hastaBilgi (id INTEGER PRIMARY KEY AUTOINCREMENT, isim Text, soyisim Text, " +
-                "dogumTarihi Text, cinsiyet Text, sifre Text, sifreTekrar Text);");
+        db.execSQL("create table hastaBilgi (id INTEGER PRIMARY KEY AUTOINCREMENT, isim TEXT, soyisim TEXT,tcKimlik VARCHAR, dogumTarihi TEXT, cinsiyet TEXT, sifre TEXT, sifreTekrar TEXT);");
 
     }
 

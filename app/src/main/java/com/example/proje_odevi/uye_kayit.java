@@ -16,9 +16,9 @@ import android.widget.Toast;
 
 
 public class uye_kayit extends AppCompatActivity {
-    private String[] cinsiyet = {"KADIN","ERKEK"};
     Button kaydoluye;
     veriTabani v1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +46,11 @@ public class uye_kayit extends AppCompatActivity {
                 ContentValues veriler = new ContentValues();
                 veriler.put("isim", et1.getText().toString());
                 veriler.put("soyisim", et2.getText().toString());
-                veriler.put("dogumTarihi", et3.getText().toString());
-                veriler.put("cinsiyet", et4.getText().toString());
-                veriler.put("sifre", et5.getText().toString());
-                veriler.put("sifreTekrar", et6.getText().toString());
+                veriler.put("tckimlikNo", et3.getText().toString());
+                veriler.put("dogumTarihi", et4.getText().toString());
+                veriler.put("cinsiyet", et5.getText().toString());
+                veriler.put("sifre", et6.getText().toString());
+                veriler.put("sifreTekrar", et7.getText().toString());
                 db.insert("hastaBilgi",null, veriler);
 
 
