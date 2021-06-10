@@ -31,9 +31,6 @@ import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    FirebaseDatabase database;
-    DatabaseReference myRef;
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -57,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         final  EditText et1=(EditText)findViewById(R.id.editText2);
         final EditText et2= (EditText)findViewById(R.id.editText);
-        final TextView tv1 = (TextView)findViewById(R.id.textView2);
-        final TextView tv2 = (TextView)findViewById(R.id.textView3);
 
         final Button btnkaydol = findViewById(R.id.button);
         btnkaydol.setBackgroundColor(Color.parseColor("#ff0006"));
@@ -121,21 +116,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("user");
 
-
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                String value = dataSnapshot.getValue(String.class);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-            }
-        });
 
 
 

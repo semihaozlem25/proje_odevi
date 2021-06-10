@@ -29,18 +29,13 @@ public class uye_kayit extends AppCompatActivity {
 
 
         final TextView tv1 = (TextView)findViewById(R.id.baslik);
-        final TextView tv2 = (TextView)findViewById(R.id.isim);
-        final TextView tv3 = (TextView)findViewById(R.id.sysisim);
-        final TextView tv4 = (TextView)findViewById(R.id.dtrh);
-        final TextView tv5 = (TextView)findViewById(R.id.cnsyt);
-        final TextView tv6 = (TextView)findViewById(R.id.sifre);
-        final TextView tv7 = (TextView)findViewById(R.id.sifret);
         final EditText et1 = (EditText)findViewById(R.id.isimedt);
         final EditText et2 = (EditText)findViewById(R.id.sysedt);
-        final EditText et3 = (EditText)findViewById(R.id.dgtedt);
-        final EditText et4 = (EditText)findViewById(R.id.cnsytedt);
-        final EditText et5 = (EditText)findViewById(R.id.sifreedt);
-        final EditText et6 = (EditText)findViewById(R.id.sifretedt);
+        final EditText et3 = (EditText)findViewById(R.id.tcedt);
+        final EditText et4 = (EditText)findViewById(R.id.dgtedt);
+        final EditText et5 = (EditText)findViewById(R.id.cnsytedt);
+        final EditText et6 = (EditText)findViewById(R.id.sifreedt);
+        final EditText et7 = (EditText)findViewById(R.id.sifretedt);
         kaydoluye = findViewById(R.id.kaydoluye);
 
 
@@ -64,7 +59,7 @@ public class uye_kayit extends AppCompatActivity {
 
 
 
-                Intent intent = new Intent(getApplicationContext(), giris.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
 
                 Toast.makeText (getApplicationContext (), "Kayıt işleminiz gerçekleşmiştir." , Toast.LENGTH_SHORT) .show ();
