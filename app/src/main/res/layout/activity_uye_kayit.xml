@@ -27,7 +27,7 @@
         android:layout_width="150dp"
         android:layout_height="46dp"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="12dp"
         android:background="#00FFCC"
         android:text="KAYDOL"
         android:textColor="#000000"
