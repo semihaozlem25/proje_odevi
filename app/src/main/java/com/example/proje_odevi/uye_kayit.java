@@ -36,11 +36,9 @@ public class uye_kayit extends AppCompatActivity {
         final EditText et5 = (EditText)findViewById(R.id.cnsytedt);
         final EditText et6 = (EditText)findViewById(R.id.sifreedt);
         final EditText et7 = (EditText)findViewById(R.id.sifretedt);
+
+
         kaydoluye = findViewById(R.id.kaydoluye);
-
-
-
-        kaydoluye.setBackgroundColor(Color.parseColor("#ff0006"));
         kaydoluye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,30 +53,12 @@ public class uye_kayit extends AppCompatActivity {
                 db.insert("hastaBilgi",null, veriler);
 
 
-
-
-
-
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
 
                 Toast.makeText (getApplicationContext (), "Kayıt işleminiz gerçekleşmiştir." , Toast.LENGTH_SHORT) .show ();
 
-                new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        kaydoluye.setBackgroundColor(Color.parseColor("#ffffff"));
 
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        kaydoluye.setBackgroundColor(Color.parseColor("#ff0006"));
-
-
-                    }
-                }.start();
 
             }
         });

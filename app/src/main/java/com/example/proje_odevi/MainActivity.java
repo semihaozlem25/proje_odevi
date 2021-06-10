@@ -32,6 +32,7 @@ import java.io.FileOutputStream;
 public class MainActivity extends AppCompatActivity {
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -55,53 +56,21 @@ public class MainActivity extends AppCompatActivity {
         final  EditText et1=(EditText)findViewById(R.id.editText2);
         final EditText et2= (EditText)findViewById(R.id.editText);
 
+
         final Button btnkaydol = findViewById(R.id.button);
-        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
         btnkaydol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
-
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
-
-
-                    }
-                }.start();
 
                 Intent intent = new Intent(getApplicationContext(),uye_kayit.class);
                 startActivity(intent);
             }
         });
+
         final Button btngiris = findViewById(R.id.button2);
-        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
-
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
-
-
-                    }
-                }.start();
 
                 if(et1.getText().toString().equals("12345678901")&& et2.getText().toString().equals("123456")){
                     Intent i = new Intent(getApplicationContext(), giris.class);
@@ -114,8 +83,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
 
 
 
