@@ -121,7 +121,6 @@ public class randevu_al extends AppCompatActivity {
             }
         });
         final Button btnrandevu = findViewById(R.id.btnrandevu);
-        btnrandevu.setBackgroundColor(Color.parseColor("#ff0006"));
         btnrandevu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,21 +132,6 @@ public class randevu_al extends AppCompatActivity {
                         spinnersaat.getSelectedItem().toString())
                 );
 
-                new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-                        btnrandevu.setBackgroundColor(Color.parseColor("#ffffff"));
-
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        btnrandevu.setBackgroundColor(Color.parseColor("#ff0006"));
-
-
-                    }
-                }.start();
                 Intent intent = new Intent(getApplicationContext(),randevularim.class);
                 startActivity(intent);
                 Toast.makeText (getApplicationContext (), "Randevunuz alınmıştır." , Toast.LENGTH_SHORT) .show ();

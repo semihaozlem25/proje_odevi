@@ -62,29 +62,12 @@ public class randevularim extends AppCompatActivity {
 
 
         final Button btncikis = findViewById(id.btncikis);
-        btncikis.setBackgroundColor(Color.parseColor("#ff0006"));
         btncikis.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
                builder.setView(custom_dialog);
                builder.show();
-
-               new CountDownTimer(10000, 1000) {
-                   @Override
-                   public void onTick(long millisUntilFinished) {
-                       btncikis.setBackgroundColor(Color.parseColor("#ffffff"));
-
-
-                   }
-
-                   @Override
-                   public void onFinish() {
-                       btncikis.setBackgroundColor(Color.parseColor("#ff0006"));
-
-
-                   }
-               }.start();
 
 
            }
