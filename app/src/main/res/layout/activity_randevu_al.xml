@@ -53,23 +53,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="253dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="496dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/tvr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="356dp"
         android:text="Randevu Saati"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
@@ -78,16 +67,14 @@
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnrandevu"
         android:layout_width="218dp"
         android:layout_height="62dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="172dp"
         android:background="#00FFCC"
         android:text="RANDEVU AL"
         android:textColor="#000000"
@@ -100,23 +87,35 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="262dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="152dp"
+        android:id="@+id/spinner"
+        android:layout_width="263dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
         android:background="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btnrandevu"
-        app:layout_constraintStart_toEndOf="@+id/tvd" />
+        android:entries="Polikinlikler"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikrandevual" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="267dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="264dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="44dp"
-        android:background="#FFFDFD"
-        app:layout_constraintBottom_toTopOf="@+id/btnrandevu"
-        app:layout_constraintStart_toEndOf="@+id/tvr" />
+        android:layout_width="263dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
