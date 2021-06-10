@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText et2= (EditText)findViewById(R.id.editText);
 
         final Button btnkaydol = findViewById(R.id.button);
-        btnkaydol.setBackgroundColor(Color.parseColor("#ff0006"));
+        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
         btnkaydol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
                 new CountDownTimer(10000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        btnkaydol.setBackgroundColor(Color.parseColor("#ffffff"));
+                        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
 
 
                     }
 
                     @Override
                     public void onFinish() {
-                        btnkaydol.setBackgroundColor(Color.parseColor("#ff0006"));
+                        btnkaydol.setBackgroundColor(Color.parseColor("##00FFCC"));
 
 
                     }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         final Button btngiris = findViewById(R.id.button2);
-        btngiris.setBackgroundColor(Color.parseColor("#ff0006"));
+        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,14 +90,14 @@ public class MainActivity extends AppCompatActivity {
                 new CountDownTimer(10000, 1000) {
                     @Override
                     public void onTick(long millisUntilFinished) {
-                        btngiris.setBackgroundColor(Color.parseColor("#ffffff"));
+                        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
 
 
                     }
 
                     @Override
                     public void onFinish() {
-                        btngiris.setBackgroundColor(Color.parseColor("#ff0006"));
+                        btngiris.setBackgroundColor(Color.parseColor("##00FFCC"));
 
 
                     }
