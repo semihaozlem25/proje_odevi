@@ -53,28 +53,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvp" />
 
-    <TextView
-        android:id="@+id/tvr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="356dp"
-        android:text="Randevu Saati"
-        android:textColor="#000000"
-        android:textColorHighlight="#000000"
-        android:textColorHint="#000000"
-        android:textColorLink="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/btnrandevu"
         android:layout_width="218dp"
         android:layout_height="62dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="276dp"
         android:background="#00FFCC"
         android:text="RANDEVU AL"
         android:textColor="#000000"
@@ -109,12 +93,27 @@
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="263dp"
-        android:layout_height="75dp"
+        android:layout_width="268dp"
+        android:layout_height="73dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="12dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="88dp"
+        android:text="Randevu Saati"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
