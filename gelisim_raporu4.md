@@ -14,6 +14,11 @@ Yukarıda ki kodda stabil bir TC kimlik numarası ve şifre ile yönetici giriş
 Proejede oluşan eksiklikler sayesinde bilgiler_guncelle ve hasta_liste gibi sınıflar oluşturuldu. Busınıfların içine veri tabanına kayıt edilen hastaların listesi onların güncellenmesi veya silinmesi için gerekli kodlar yazılacaktır.
 
 
+![b3](https://user-images.githubusercontent.com/74215861/121729869-9de9a500-caf7-11eb-8c61-d33198158f4f.PNG)
+
+Yazılan kodların yanısıra uygulamanın tasarımı için de bir şeyler yapılmıştır.
+
+
 
 
 
