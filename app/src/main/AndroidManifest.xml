@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".veriTabani"></activity>
+        <activity android:name=".bilgiler"></activity>
+        <activity android:name=".veriTabani" />
         <activity
             android:name=".randevu_al"
             android:parentActivityName=".giris" />
