@@ -72,13 +72,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(et1.getText().toString().equals("12345678901")&& et2.getText().toString().equals("123456")){
+                if(et1.getText().toString().equals("12345678901") && et2.getText().toString().equals("123456")){
                     Intent i = new Intent(getApplicationContext(), giris.class);
                     i.putExtra("id", et1.getText().toString());
                     startActivity(i);
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"Kullanıcı adı veya şifre yanlış",Toast.LENGTH_SHORT).show();
+                }
+                if(et1.getText().toString().equals("2525252525") && et2.getText().toString().equals("2525")){
+
                 }
 
             }

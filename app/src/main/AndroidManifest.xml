@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bilgiler"></activity>
+        <activity android:name=".hasta_liste"></activity>
+        <activity android:name=".bilgiler_guncelle" />
         <activity android:name=".veriTabani" />
         <activity
             android:name=".randevu_al"

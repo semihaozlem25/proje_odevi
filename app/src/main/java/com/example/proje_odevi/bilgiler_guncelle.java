@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class bilgiler extends AppCompatActivity {
+public class bilgiler_guncelle extends AppCompatActivity {
     Button guncelle;
     TextView tv1;
     EditText ad, soyad, tc, dgrt, cnsyt, sifre, sifret;
@@ -19,7 +19,7 @@ public class bilgiler extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bilgiler);
+        setContentView(R.layout.activity_bilgiler_guncelle);
 
         v1 = new veriTabani(this);
 
