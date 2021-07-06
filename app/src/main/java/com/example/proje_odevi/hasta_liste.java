@@ -16,9 +16,6 @@ public class hasta_liste extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasta_liste);
 
-        tv = (TextView)findViewById(R.id.hasta_list);
-        goster = findViewById(R.id.btngoster);
-        sil = findViewById(R.id.btnsil);
 
     }
 }
