@@ -3,13 +3,8 @@ package com.example.proje_odevi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.preference.EditTextPreference;
-import android.text.Editable;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,16 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final  EditText et1=(EditText)findViewById(R.id.editText2);
-        final EditText et2= (EditText)findViewById(R.id.editText);
+        final  EditText et1=(EditText)findViewById(R.id.edittc);
+        final EditText et2= (EditText)findViewById(R.id.edittc);
+        final TextView tv = (TextView)findViewById(R.id.kayıt);
 
 
         final Button btnkaydol = findViewById(R.id.button);
