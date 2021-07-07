@@ -23,40 +23,52 @@ public class User
 
     }
 
-    public String getAd() {
+    public String getAd()
+    {
         return ad;
     }
-    public void setAd(String ad) {
+    public void setAd(String ad)
+    {
         this.ad = ad;
     }
-    public String getSoyad() {
+    public String getSoyad()
+    {
         return soyad;
     }
-    public void setSoyad(String soyad) {
+    public void setSoyad(String soyad)
+    {
         this.soyad = soyad;
     }
-    public String getDgtrh(){
+    public String getDgtrh()
+    {
         return dgtrh;
     }
-    public void setDgtrh(String dgtrh){
+    public void setDgtrh(String dgtrh)
+    {
         this.dgtrh = dgtrh;
     }
-    public String getCinsiyet(){
+    public String getCinsiyet()
+    {
         return cinsiyet;
     }
-    public void setCinsiyet(String cinsiyet){
+    public void setCinsiyet(String cinsiyet)
+    {
         this.cinsiyet = cinsiyet;
     }
-    public String getSifre(){
+    public String getSifre()
+    {
         return sifre;
     }
-    public void setSifre(String sifre){
+    public void setSifre(String sifre)
+    {
         this.sifre = sifre;
     }
-    public String getSifretekrar() {
+    public String getSifretekrar()
+    {
         return sifretekrar;
     }
-    public void setSifretekrar(String sifretekrar){
+    public void setSifretekrar(String sifretekrar)
+    {
         this.sifretekrar = sifretekrar;
     }
 }
